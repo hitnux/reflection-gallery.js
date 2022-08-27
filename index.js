@@ -37,18 +37,6 @@ class Reflection {
         this.mounted(event);
       }
     });
-
-    const checkBoundary = () => {
-      let outer = this.root.getBoundingClientRect();
-
-      console.log(
-        outer);
-    };
-
-    this.root.addEventListener('mousemove', (e) => {
-      console.log(e);
-      checkBoundary();
-    });
   }
 
   template = () => {
